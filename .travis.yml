@@ -9,5 +9,8 @@ before_install:
   - gem install bundler --version "~> 1.17"
   - gem list bundler
   - bundle --version
+install:
+  - bundle --version
+  - bundle install
 before_script:
   - bundle install
