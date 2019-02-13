@@ -2,5 +2,10 @@ dist: xenial
 script: bundle check
 rvm:
   - jruby-9.2.5.0
+before_install:
+  - gem update --system
+  - gem uninstall bundler --all --ignore-dependencies --executables
+  - gem install bundler --version "~> 1.17"
+  - gem list bundler
 before_script:
   - bundle install
