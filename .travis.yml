@@ -8,5 +8,6 @@ before_install:
   - gem uninstall bundler --all --ignore-dependencies --executables
   - gem install bundler --version "~> 1.17"
   - gem list bundler
+  - bundle --version
 before_script:
   - bundle install
