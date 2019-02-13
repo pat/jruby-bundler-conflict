@@ -6,11 +6,11 @@ rvm:
 before_install:
   - gem update --system
   - gem uninstall bundler --all --ignore-dependencies --executables
-  - gem install bundler --version "~> 1.17"
+  - gem install bundler --version 1.17.3
   - gem list bundler
   - bundle --version
 install:
-  - bundle --version
-  - bundle install
+  - bundle _1.17.3_ --version
+  - bundle _1.17.3_ install
 before_script:
   - bundle install
